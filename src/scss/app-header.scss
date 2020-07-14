@@ -1,8 +1,12 @@
+@import './app-fonts.scss';
+
 .app-header{
     position: sticky;
     top: 0;
     width: 100%;
-    padding: .6em 1em; 
+    padding: 2em 0; 
+    z-index: 999;
+    background: #fff;
     
     &__wrapper{
         display: flex;
@@ -11,10 +15,14 @@
     }
 
     &__search-cont{
-        display: inline-block;
+        display: none;
         background: #dfdfdf;
         padding: .6em 1em;
         border-radius: 8px;
+
+        > :nth-child(n+1){
+            vertical-align: middle;
+        }
     }
 
     &__search-input{
@@ -25,18 +33,22 @@
     }
 
     &__search-btn{
-        background: #333;
-        color: #fff;
-        padding: .4em .8em;
+        background: transparent;
         border: none;
-        border-radius: 8px;
     }
 
     &__actions-cont{
-        :nth-child(n+1){
+        > :nth-child(n+1){
             display: inline-block;
-            margin: 0 .6em;
+            margin: 0 0 0 2em;
+            vertical-align: middle;
         }
+    }
+
+    @media screen and (min-width: 768px){
+        &__search-cont{
+            display: inline-block;
+        }    
     }
 }
 
@@ -44,7 +56,7 @@
     display: inline-block;
 
     h1{
-        font-family:  Haettenschweiler, Impact, 'Arial Narrow Bold', sans-serif;
+        font-family:  $header-font;
         font-weight: 100;
     }
 }
