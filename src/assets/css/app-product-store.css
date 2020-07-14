@@ -1,0 +1,74 @@
+.--header-font {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.app-product-store {
+  width: 100%;
+  padding: 3em 0;
+}
+
+.app-product-store__header {
+  margin-bottom: 1em;
+}
+
+.app-product-store__header h1 {
+  margin-bottom: .5em;
+  text-transform: uppercase;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 2em;
+  font-weight: 100;
+}
+
+.app-product-store__categories {
+  margin-bottom: 2em;
+}
+
+.app-product-store__category {
+  display: inline-block;
+  margin: 0 1em 1em 0;
+  padding: .8em 1.8em;
+  background: #fff;
+  border-radius: .4em;
+  border: 1px solid #333;
+  font-size: .8em;
+}
+
+.app-product-store__product-list {
+  display: -ms-grid;
+  display: grid;
+  gap: 3em;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .app-product-store__product-list {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.product-item {
+  width: 100%;
+  height: 500px;
+}
+
+.product-item__img-cont {
+  overflow: hidden;
+  position: relative;
+  border-radius: 1em;
+  height: calc(100% - 3em);
+  margin-bottom: 2em;
+}
+
+.product-item__img {
+  width: 100%;
+}
+
+.product-item__title {
+  text-transform: uppercase;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: 100;
+}
+/*# sourceMappingURL=app-product-store.css.map */

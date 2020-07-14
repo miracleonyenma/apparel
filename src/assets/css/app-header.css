@@ -1,9 +1,15 @@
+.--header-font {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
 .app-header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   width: 100%;
-  padding: .6em 1em;
+  padding: 2em 0;
+  z-index: 999;
+  background: #fff;
 }
 
 .app-header__wrapper {
@@ -19,10 +25,14 @@
 }
 
 .app-header__search-cont {
-  display: inline-block;
+  display: none;
   background: #dfdfdf;
   padding: .6em 1em;
   border-radius: 8px;
+}
+
+.app-header__search-cont > :nth-child(n+1) {
+  vertical-align: middle;
 }
 
 .app-header__search-input {
@@ -33,16 +43,20 @@
 }
 
 .app-header__search-btn {
-  background: #333;
-  color: #fff;
-  padding: .4em .8em;
+  background: transparent;
   border: none;
-  border-radius: 8px;
 }
 
-.app-header__actions-cont :nth-child(n+1) {
+.app-header__actions-cont > :nth-child(n+1) {
   display: inline-block;
-  margin: 0 .6em;
+  margin: 0 0 0 2em;
+  vertical-align: middle;
+}
+
+@media screen and (min-width: 768px) {
+  .app-header__search-cont {
+    display: inline-block;
+  }
 }
 
 .app-logo {
@@ -50,7 +64,7 @@
 }
 
 .app-logo h1 {
-  font-family: Haettenschweiler, Impact, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-weight: 100;
 }
 /*# sourceMappingURL=app-header.css.map */

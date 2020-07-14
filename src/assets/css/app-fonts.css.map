@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,cAAc,CAAA;EACV,WAAW,EAHC,MAAM,EAAE,gBAAgB,EAAE,mBAAmB,EAAE,UAAU;CAIxE",
+    "sources": [
+        "../../scss/app-fonts.scss"
+    ],
+    "names": [],
+    "file": "app-fonts.css"
+}

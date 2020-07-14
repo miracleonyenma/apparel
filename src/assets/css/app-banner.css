@@ -1,0 +1,44 @@
+.app-banner {
+  width: 100%;
+  min-height: 300px;
+  height: 360px;
+  border-radius: 1.6em;
+  background: #4f3fdd;
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.app-banner img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  opacity: 0.5;
+}
+
+.app-banner__header {
+  width: 75%;
+  margin: 0 3em 0 auto;
+  z-index: 2;
+  color: #fff;
+  text-align: right;
+}
+
+.app-banner__header h1 {
+  font-size: x-large;
+}
+
+@media screen and (min-width: 768px) {
+  .app-banner__header h1 {
+    font-size: 3em;
+  }
+}
+/*# sourceMappingURL=app-banner.css.map */
